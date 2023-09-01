@@ -7,53 +7,114 @@
 	<meta name="description" content="Лабораторна робота по CSS 1-го семестру курсу 'Internet-технології' поток КІУКІз-21">
     <link href="Lab_2.css" type="text/css" rel="stylesheet">
 	<link rel="icon" type="image/x-icon" href="123.ico">
-	
 	<style>
-
-
 div.hiddenblok {
+display: none;
 position:fixed;
-background-color:#85adad;
+background-color:#669999;
 width:200px;
-left:0;
-bottom:0px;
-border-radius:15px;
-padding-left:7px;
-
+left:10;
+bottom:50px;
+border-radius:0px 20px 20px 0px;
 }
-.blok {
+.dropbtn{
+position:fixed;
+background-color:#669999;
+width:10px;
+height:50px;
+left:0;
+bottom:50px;
+border-radius:0px 20px 20px 0px;
+cursor: pointer;
+}
+
+.dropright {
+  position: relative;
+  display: inline-block;
+}
+
+.dropright:hover .hiddenblok {
+  display: block;
+}
+p.blok {
   margin: 0;
   position: absolute;
   top: 50%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-/*margin: auto;
-text-align:center;
-padding-top: 20px;*/
+  font-size:12px;
+}
+
+
+/*--------*/
+
+ul {
+list-style-type:none;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+div.nav1 {
+  float: left;
+width:20%;
 }
 
 
 	</style>
 </head>
-<body style="background-color: #e0ebeb;">
-<header class="head"> <h1>Head</h1>
+<body style="background-color:#5c8a8a;">
+
+<div class="dropright">
+<div class="dropbtn"> <p>  </p></div>
+<div class="hiddenblok"> <img src="logo.png" alt=" "> <a href="https://nure.ua/"> <p class="blok">nure.ua<p> </a>
+ </div>
+</div>
+
+<header> 
+<img class="cat" src="cat.png" all="cat" >
+<div>
+<h1>Meo-Cat</h1>
+<p style="font-size:14px;"> Все про пухнастих, нявкаючих та тих, що стрибають </p>
+<div>
 </header>
 
-<div class="hiddenblok"> <img src="logo.png" alt=" "> <a href="https://nure.ua/"> <p class="blok">nure.ua<p> </a> </div>
-
 <section >
-<nav> <p> Nav </p></nav>
+<nav> <!--
+<div class="nav1"><p> Головна </p>  </div>
+<div class="nav1"> <p> Новини </p></div>
+<div class="nav1"> <p> Про нас </p>  </div>
+-->
+ 
+
+
+</nav>
+
+
+
+
 <article> <p> Article </p> </article>
 </section>
+
 <aside> 
 <p> Aside </p>
 </aside>
 
 
 <footer>
- <p> Footer </p>
+<div style=" font-size:9px;"> 
+<ul >
+<li>  <p> 038 000 000  </p> </li>
+<li>  <p> Cat </p> </li>
+<li>  <p> Лабораторна робота №2 по CSS </p></li>
+</ul>
+</div>
 </footer>
+
+
+
 
 </body>
 </html>
