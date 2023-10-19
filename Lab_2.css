@@ -21,6 +21,9 @@ p, h1, h2, h3 {
 	margin: 0;
   padding: 0;
 }
+	
+	
+	
 	header {
 	background-color:#c2d6d6;
 	text-align: center;
@@ -81,7 +84,7 @@ display: none;
 position:fixed;
 background-color:#669999;
 width:200px;
-left:10;
+left:0;
 bottom:50px;
 border-radius:0px 20px 20px 0px;
 border:1px solid #5c8a8a;
@@ -172,8 +175,7 @@ border-radius:25px;
 }
 
 
-/*----- 
----*/
+/*--------*/
 label {
 	margin-left:15%;
 }
@@ -182,7 +184,6 @@ input[type=E-mail], [type=password]{
 	background-color:#d1e0e0;
 	width:70%;
 	margin: 2% 15%;
-  
 	height:25px;
 	border-radius: 10px;
 	border: 2px solid  #006666;
@@ -227,3 +228,18 @@ label {
 	padding:3px;
 	
 }
+
+/*-------*/
+
+
+button.but1{
+		background-color:#a6d6cd;
+	width:auto;
+	height:30px;
+	border: none;
+	outline:none;
+	padding:5px;
+	border-radius:10px;
+}
+button.but1:hover {cursor: pointer;  }
+
