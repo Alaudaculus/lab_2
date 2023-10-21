@@ -9,8 +9,6 @@
 	<link rel="icon" type="image/x-icon" href="123.ico">
 	
 	<style>
-
-	
 article p {
 text-indent:40px;
 margin:7px;
@@ -20,7 +18,9 @@ article h3 {
 margin:10px;
 text-align:center;
 }
-
+article h1 {
+text-align:center;
+}
 
 	</style>
 </head>
@@ -46,56 +46,51 @@ text-align:center;
 <li>  <a href="Lab_2.1.html"> <p> Головна </p></a>  </li>
 <li> <p> Новини </p>  </li>
 <li> <p> Про нас </p> </li>
-<li> <p> 00000 </p>  </li>
+<li> <p> Реєстрація </p>  </li>
 </ul>
 </nav>
 
-<article style="background-color:#c2d6d6;">
- <p> Cat </p>
- <form>
-<button class="but1" type="button" onclick="alert('Коти!!!')"> Оповіщення! </button>
-</form>
+<article class="form2" style="background-color:#c2d6d6; " >
 
-
-
+<h1>  Форма реєстрації користувача</h1>
+<div class="regist">
+    <form id="registrationForm">
+     
+            <label for="username"><p>Ім'я користувача:</p></label>
+            <input type="text" id="username" name="username" required>
+      
+            <label for="email"><p>Електронна пошта:</p></label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="password1"><p>Пароль:</p></label>
+            <input type="password" id="password" name="password" required>
+			
+            <label for="confirmPassword"><p>Підтвердіть пароль:</p></label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+      
+        
+        <button class= "regis" type="submit">Зареєструватися</button>
+    </form>
+</div>
+ 
+    
 </article>
 
-
-<aside> 
-<div class="form1">
-
-<form  action="Lab_2.2.html" target="-blank" method="post">
-<label for="fmail">E-mail:</label><br>
-<input type="E-mail" id="fmail" name="fmail"><br>
-<label for="fpassword">Пароль:</label><br>
-<input type="password" id="fpassword" name="fpassword"><br><br>
-<input type="submit" value="Увійти">
-<input type="submit" value="Забули пароль?"><br><br>
-<input type="submit" value="Реєстрація">
-
-</div>
-
-</form>
-
-
-</aside>
-
+<aside class="a">
+ <p class="task"> Додати на сторінку форму реєстрації користувача, оформлення полів якої залежить від коректності заповнення (знадобляться псевдокласи valid або invalid) та обов'язковості (також будуть у нагоді відповідні псевдокласи). Форма має бути центрована по горизонталі (розміщена по центру сторінки) та "не прокручуватися", тобто, позиція форми не повинна змінюватись при скролінгу сторінки. </p>
+ </aside>
+ 
 
 <button class="above1"><a href="#A1">
 <img src="above_top_up_icon.png" alt="above"></a>
 </button>
 
- </section>
-
-
+</section>
 
 <footer  >
- <p> Cat </p>
-  <p> Лабораторна робота №2  </p>
-
+ <h2> Лабораторна робота №2  </h2>
+<p> Варіант №3 </p> 
 </footer>
-
-
 
 </body>
 </html>

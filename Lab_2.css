@@ -46,6 +46,7 @@ p, h1, h2, h3 {
 	height:100%;
 	border-radius:10px 10px 0 0;
 	}
+	
 	aside{
 	float:right;
 	background-color:#c2d6d6;
@@ -53,6 +54,8 @@ p, h1, h2, h3 {
 	width:20%;
 	height:2280px;
 	}
+	aside.a {height:auto;}
+	
 	section:after{
 	content:"";
 	display:table;
@@ -176,47 +179,76 @@ border-radius:25px;
 
 
 /*--------*/
+label.m {margin: 10px;}
 label {
-	margin-left:15%;
+	
+	font-size:14px;
+	display: block;
+    font-weight: bold;
 }
 
-input[type=E-mail], [type=password]{
-	background-color:#d1e0e0;
-	width:70%;
-	margin: 2% 15%;
-	height:25px;
+input[type=password], [type=text], [type=email] 	{
+	
 	border-radius: 10px;
 	border: 2px solid  #006666;
 	outline:none;
-	padding:5px;
-	}
-input[type=E-mail]:focus, [type=password]:focus{ 
-background-color: #c6e6bd;
+	padding:2px;
+	width:70%;
+	margin: 0 15%;
+	height:25px;
 }
-/*
-input[type=E-mail]:valid, [type=password]:valid{ 
-background-color: #c7fafa ;
-}
-*/
-input[type=E-mail]:invalid, [type=password]:invalid{ 
-background-color:#dca8a8;
-}
-input[type=submit]{
-	background-color:#c2d6d6;
-	width:auto;
-	height:30px;
-	border: none;
-	outline:none;
-	padding:5px;
+input[type=text], [type=email], [type=password1]	{
+	width:70%;
+	margin: 0px 15%;
 	
 	}
-input[type=submit]:hover {
+	
+	  input[type="text"]:valid,
+        input[type="email"]:valid,
+        input[type="password"]:valid {
+            border: 2px solid green;
+			
+        }
+
+        input[type="text"]:invalid,
+        input[type="email"]:invalid,
+        input[type="password"]:invalid {
+           background-color: #ebc89ac8;
+		    border: 2px solid red;
+        }
+
+      input[required]:focus {
+          background-color:#d1e0e0;
+		  border: 2px solid  #006666;
+        }
+.error {
+        color: red;
+        }	
+
+button.regis[type=submit] {
+	width:50%;
+	margin: 10px 25%;
+	padding:5px;
+	 }
+button.regis[type=submit]:hover {
+	width:50%;
+	margin-left: 25%;
+	margin-right:25%;
+	padding:5px;
+	}
+button[type=submit]{
+	background-color:#c2d6d6;
+	width:auto;
+	border: none;
+	outline:none;
+	padding:3px;
+	margin-left:10px;
+	}
+button[type=submit]:hover {
 	cursor: pointer; 
 background-color:#82b5b5;
 border-radius: 7px;
-}
-label {
-	font-size:14px;
+margin-left:10px;
 }
 
 .form1 {
@@ -225,21 +257,32 @@ label {
 	right:0;
 	border:2px solid  #3d9999;
 	border-radius:10px;
+	padding:3px;	
+}
+article.form2 {
+	position:sticky;
+	top:0px;
+	right:0;		
+}
+div.regist {
+	border:2px solid  #3d9999;
+	border-radius:10px;
 	padding:3px;
-	
+	width:50%;
+	margin-left:25%;
+	margin-right:25%;
 }
 
 /*-------*/
 
-
-button.but1{
-		background-color:#a6d6cd;
+p.task{
+		background-color:#94b8b8;
 	width:auto;
-	height:30px;
+	height:auto;
 	border: none;
 	outline:none;
 	padding:5px;
 	border-radius:10px;
 }
-button.but1:hover {cursor: pointer;  }
+
 
